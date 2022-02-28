@@ -1,0 +1,13 @@
+rule : rule_name inh_attr ':' rule_inner
+rule_name : ID
+
+inh_attr : EPS
+inh_attr : '[' inh_attr_names ']'
+inh_attr_names : ID ID inh_attr_names?
+
+rule_inner : ID rule_inner?
+rule_inner : TEXT rule_inner?
+rule_inner : '(' ID '=' ID ')' rule_inner?
+rule_inner : '$' ID rule_inner?
+
+rule

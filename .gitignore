@@ -1,3 +1,9 @@
+# CMake
+cmake-build-debug/
+
+# Testing
+test/
+
 # Prerequisites
 *.d
 
