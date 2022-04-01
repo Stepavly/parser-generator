@@ -41,7 +41,7 @@ Order of definition and usage does not matter.
 Names `EPS` and `END` are reserved and **must not** be declared, but `EPS` may be used in rules as empty string.
 - ### Variables in rule
 
-You may write `(var_name=smth)` to save the result of `sthm` parsing. The `smth` can be:
+You may write `(var_name=smth)` to save the result of `smth` parsing. The `smth` can be:
 
 1) #### Text. 
     
@@ -85,7 +85,7 @@ Function name **must** start with dollar sign. The variable list indicates the v
 
 - ### Inheriting of variables
 
-After the rule name you may write list of inherited variables for the rule separated by comma. These variables will be passed to the rule when it's parsing started. 
+After the rule name you may write list of inherited variables for the rule separated by comma. These variables will be passed to the rule when it's parsing starts. 
 
 Inherited variables for the rule is the union of inherited variables for each rule instance.
 
@@ -121,7 +121,7 @@ Code above evaluates expression in the form of `NUM ('+' NUM)*`.
 
 - ### Starting rule
 
-Starting rule **must** be non-terminal rule (i.e. it's name must not use upper-case letters) and be place in the last line of the input file.
+Starting rule **must** be non-terminal rule (i.e. it's name must not use upper-case letters) and be placed in the last line of the input file.
 
 ## Example
 
